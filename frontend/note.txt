@@ -1,0 +1,5 @@
+1 - them vaof gio ko load laij trang
+2 - nếu chưa thanh toán thì giỏ vẫn có số bên cạnh
+3 - xóa món hàng trong giở, cập nhật giá ko load lại trang
+4 - Style CSS ảnh các sản phẩm cũng kích cỡ
+5 - tìm kiếm trong trang

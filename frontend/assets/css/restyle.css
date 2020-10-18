@@ -1,0 +1,119 @@
+footer.footer-area.section_gap {
+    background-color: #cdcddb;
+}
+.search-item{
+    margin-left: 30px;
+}
+.main-content{
+    margin-top: 150px;
+}
+.top_menu.row.m0 {
+    background-color: #6fffef;
+}
+.subscription-area {
+    background: #cffbff;
+}
+.header_area .main_menu {
+    background: greenyellow;
+}
+.logo_item{
+    display: inline-block;
+    text-align: center;
+    -webkit-transition: -webkit-transform 500ms;
+    transition:  transform 500ms;
+}
+.logo_item:hover{
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+.section_gap {
+    padding: 60px 0px;
+}
+.ajax-message {
+    position: fixed;
+    right: 150px;
+    top: 50px;
+    z-index: 10000000;
+    border: 1px solid #21431ecc;
+    color: #21431ecc;
+    padding: 7px 12px;
+    border-radius: 4px;
+    background: #fff;
+    transition: all 0.3s ease 0s;
+    opacity: 0;
+}
+.ajax-message-active {
+    opacity: 1;
+}
+.cart_inner .table tbody tr.bottom_button td .cupon_text {
+     margin-left: 0px;
+}
+img.img-fluid {
+    height: 160px;
+}
+.f_p_item {
+    border-radius: 6px;
+    border: solid green 0.5px;
+    padding: 3px;
+    height: 250px;
+}
+.product_detail_link{
+    /*padding: 1px 0;*/
+    background-color: green;
+}
+.product_detail_link a h4{
+    line-height: 20px;
+    color: white;
+}
+.hot_deals_area .hot_deal_box .content {
+    z-index: unset;
+}
+.clients_logo_img{
+    width: 100%;
+}
+.category_item a{
+    font-size: 16px;
+    color: #ffff;
+}
+.category_item {
+    border-right: greenyellow 1px solid;
+    padding: 5px 0;
+    text-align: center;
+    background-color: green;
+}
+.category_item:hover{
+    background-color: blue;
+}
+a.nav-link {
+    font-size: 30px;
+}
+.hang_dt{
+    /*margin-top: 100px;*/
+    border-bottom: blue 1px dotted;
+    /*border-top: blue 1px dotted;*/
+}
+img.img-fluid {
+    width: 100%;
+    height: 100%;
+}
+.hot_deal_box {
+    height: 300px;
+}
+.s_product_text p {
+    /*padding-top: 20px;*/
+    border-top: 1px dotted #d5d5d5;
+    /*margin-top: 20px;*/
+    /*margin-bottom: 70px;*/
+}
+.f_p_img {
+    height: 175px;
+}
+.d-flex img{
+    height: 100%;
+}
+.d-flex{
+    height: 100px;
+}
+.profile{
+    padding: 50px;
+}

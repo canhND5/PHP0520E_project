@@ -1,0 +1,37 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+#rewrite cho trang giỏ hàng
+RewriteRule them-vao-gio-hang/([0-9]{1,}).html index.php?controller=cart&action=add&product_id=$1
+#rewrite cho trang giỏ hàng của bạn
+RewriteRule gio-hang-cua-ban.html index.php?controller=cart&action=index
+#rewrite cho trang xóa sản phẩm trong giỏ hàng
+RewriteRule xoa-san-pham/([0-9]+).html index.php?controller=cart&action=delete&id=$1
+#rewrite cho trang xóa sản phẩm ưa thích
+RewriteRule xoa-san-pham-ua-thich/([0-9]+).html index.php?controller=heart&action=delete&id=$1
+#rewrite cho trang thanh toán
+RewriteRule thanh-toan.html index.php?controller=payment&action=index
+#rewrite cho trang thanh toán online
+RewriteRule thanh-toan-online.html index.php?controller=payment&action=online
+#rewrite cho trang danh sách sản phẩm
+RewriteRule danh-sach-san-pham.html index.php?controller=product&action=showAll
+#rewrite cho trang danh sách sản phẩm có phân trang
+RewriteRule danh-sach-san-pham/([0-9]+).html index.php?controller=product&action=showAll&page=$1
+#rewrite cho trang chi tiết sản phẩm
+RewriteRule san-pham-(.*)-([0-9]{1,}).html index.php?controller=product&action=detail&slug=$1&id=$2
+#rewrite cho trang phương thức thanh toán
+RewriteRule phuong-thuc-thanh-toan.html index.php?controller=payment&action=payment
+#rewrite cho trang cảm ơn đã đặt hàng
+RewriteRule cam-on.html index.php?controller=payment&action=thank
+#rewrite cho trang profile user
+RewriteRule profile.html index.php?controller=user&action=profile
+#rewrite cho trang login
+RewriteRule login.html index.php?controller=user&action=login
+#rewrite cho trang logout
+RewriteRule logout.html index.php?controller=user&action=logout
+#rewrite cho trang đăng ký TK
+RewriteRule dang-ky-tai-khoan.html index.php?controller=user&action=register
+#rewrite cho trang các sản phẩm thuộc 1 danh muc nào đó
+RewriteRule danh-mục-(.*)-([0-9]{1,}).html index.php?controller=product&action=getAllByCategory&category=$1&id=$2
+#Rewrite cho trang danh sách sản phẩm ưa thích
+RewriteRule san-pham-ua-thich.html index.php?controller=heart&action=index
